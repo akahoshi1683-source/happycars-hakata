@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ハッピーカーズ博多店 | 福岡県全域・無料出張査定・車買取専門店</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans JP"', 'sans-serif'],
+                    },
+                    colors: {
+                        main: '#1e3a8a', /* 信頼のブルー */
+                        accent: '#f97316', /* 親しみのオレンジ */
+                        line: '#06C755', /* LINEグリーン */
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Noto Sans JP', sans-serif; }
+        .bg-pattern {
+            background-color: #f8fafc;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e2e8f0' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .text-shadow { text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .line-glow { box-shadow: 0 0 15px rgba(6, 199, 85, 0.4); }
+        .hero-gradient {
+            background: linear-gradient(rgba(30, 58, 138, 0.85), rgba(30, 58, 138, 0.95)), url('https://images.unsplash.com/photo-1590234731872-9a3d4d4f6b3e?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 pb-20 md:pb-0">
+
+    <!-- ヘッダー -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <i data-lucide="car-front" class="text-main w-8 h-8"></i>
+                <div>
+                    <h1 class="text-xl md:text-2xl font-black text-main leading-none uppercase tracking-tighter">ハッピーカーズ<span class="text-lg md:text-xl ml-1">博多店</span></h1>
+                    <p class="text-[10px] md:text-xs text-slate-500 mt-1 font-bold">福岡市・県北部・筑後地域の車買取はお任せ！</p>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center gap-6">
+                <div class="text-right">
+                    <p class="text-xs text-slate-500 mb-0.5">お電話でのご相談はこちら</p>
+                    <a href="tel:090-8768-5775" class="text-xl font-bold text-main flex items-center gap-1">
+                        <i data-lucide="phone" class="w-5 h-5"></i> 090-8768-5775
+                    </a>
+                </div>
+                <a href="#offer" class="bg-line hover:bg-green-600 text-white px-6 py-3 rounded-full font-bold flex items-center gap-2 transition-all shadow-md line-glow">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i> LINEで無料査定
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- メインビジュアル (Hero) -->
+    <section class="relative hero-gradient text-white min-h-[550px] flex items-center overflow-hidden">
+        <div class="relative z-10 max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-10">
+            <div class="w-full md:w-3/5 text-center md:text-left">
+                <div class="bg-accent text-white font-bold inline-block px-4 py-1 rounded-full text-sm md:text-base mb-6 shadow-lg animate-bounce">
+                    福岡市内・県北部・筑後地域まで無料出張査定！
+                </div>
+                <h2 class="text-4xl md:text-6xl font-black leading-tight mb-6 text-shadow">
+                    どんなお車でも<br>
+                    <span class="text-yellow-400">最低 2万円以上</span>で<br>
+                    買取いたします！
+                </h2>
+                <div class="space-y-3 mb-8 opacity-95 font-bold">
+                    <p class="flex items-center justify-center md:justify-start gap-2">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-yellow-400"></i> ※1500cc未満の場合は5,000円以上を保証
+                    </p>
+                    <p class="flex items-center justify-center md:justify-start gap-2">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-yellow-400"></i> 不動車・過走行車・事故車も丁寧に査定
+                    </p>
+                    <p class="flex items-center justify-center md:justify-start gap-2">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-yellow-400"></i> 契約後の減額（二重査定）は一切なし
+                    </p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md p-6 rounded-3xl border border-white/20 max-w-lg shadow-2xl">
+                    <p class="font-bold text-lg mb-4">スマホで完結！まずは概算を知りたい方へ</p>
+                    <a href="#offer" class="block w-full bg-line hover:bg-green-600 text-white text-xl font-black py-5 rounded-2xl flex justify-center items-center gap-3 transition-all shadow-xl line-glow mb-3">
+                        <i data-lucide="message-circle" class="w-8 h-8"></i> LINEで今すぐ無料査定
+                    </a>
+                    <p class="text-xs opacity-80">最短1分で完了・匿名相談OK・しつこい電話なし</p>
+                </div>
+            </div>
+            <div class="w-full md:w-2/5">
+                <div class="relative">
+                    <div class="bg-white p-2 rounded-3xl shadow-2xl overflow-hidden transform md:rotate-2">
+                        <!-- 代表者写真 -->
+                        <img src="スクリーンショット 2025-11-19 12.02.15.jpg" alt="ハッピーカーズ博多店 代表 赤星博康" class="w-full h-auto rounded-2xl" onerror="this.src='https://via.placeholder.com/400x500?text=Representative+Photo'">
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-white text-main p-4 rounded-2xl shadow-xl border-l-8 border-accent">
+                        <p class="text-xs font-bold text-slate-500 mb-1 leading-none">私が全行程を担当します！</p>
+                        <p class="text-lg font-black italic">代表 赤星博康</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 【P】Problem：問題の提起 -->
+    <section class="py-20 px-4 bg-pattern">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-4xl font-black text-main mb-4 leading-tight">
+                    愛車を手放すとき、<br class="md:hidden">こんな不安はありませんか？
+                </h2>
+                <div class="w-20 h-1.5 bg-accent mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-8 rounded-3xl shadow-md text-center border-b-8 border-slate-200">
+                    <div class="w-16 h-16 bg-red-50 text-red-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="phone-off" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">電話の嵐が怖い</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">一括査定に申し込んだ途端、昼夜問わず鳴り止まない営業電話。仕事や家事に支障が出ることも…</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-md text-center border-b-8 border-slate-200">
+                    <div class="w-16 h-16 bg-red-50 text-red-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="frown" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">0円提示でガッカリ</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">古い車だからと一方的に「価値なし」と決めつけられ、逆に廃車費用を請求されることも。</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-md text-center border-b-8 border-slate-200">
+                    <div class="w-16 h-16 bg-red-50 text-red-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="shield-alert" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">後から減額される不安</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">契約後に不具合を理由に減額される「二重査定」。信じていたのに最後にガッカリしたくない。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 【A】Affinity：親近感・共感 -->
+    <section class="py-20 px-4 bg-white overflow-hidden">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="w-full md:w-1/2">
+                <div class="relative">
+                    <div class="absolute -top-10 -left-10 w-40 h-40 bg-accent/10 rounded-full blur-3xl"></div>
+                    <h2 class="text-3xl md:text-4xl font-black text-main mb-8 leading-tight relative z-10">
+                        「誠実・丁寧・わかりやすさ」を<br>何より大切にしています。
+                    </h2>
+                    <div class="space-y-6 text-slate-700 leading-relaxed relative z-10 font-medium text-lg">
+                        <p>はじめまして！<strong>ハッピーカーズ博多店の赤星 博康</strong>です。</p>
+                        <p>大切なお車を手放す瞬間は、誰にとっても不安なもの。「買い叩かれないか？」「騙されないか？」そんな心配を抱えるお客様が多いのが、今の車買取業界の現実です。</p>
+                        <p>だからこそ私は、<strong>査定から契約、名義変更まで一貫して私が担当</strong>することをお約束します。無理な営業や不透明な駆け引きは一切いたしません。</p>
+                        <p>「赤星さんに任せてよかった」と言っていただける、博多で一番誠実な買取店を目指しています。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 flex justify-center">
+                <div class="relative group">
+                    <div class="absolute inset-0 bg-accent rounded-[3rem] transform rotate-3 group-hover:rotate-0 transition-transform"></div>
+                    <img src="スクリーンショット 2025-11-19 12.02.15.jpg" alt="赤星博康" class="relative z-10 rounded-[3rem] shadow-2xl w-full max-w-sm" onerror="this.src='https://via.placeholder.com/400x500?text=Representative+Photo'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 【S】Solution：解決策の提示 -->
+    <section class="py-20 px-4 bg-main text-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-black mb-4 italic tracking-tighter">Happy Cars 4 Promises</h2>
+                <p class="text-blue-200 text-lg font-bold">ハッピーカーズ博多店が選ばれる4つの安心</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Promise 1 -->
+                <div class="bg-white/10 p-8 rounded-3xl border border-white/20 backdrop-blur-sm hover:bg-white/20 transition-all">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="text-5xl font-black text-yellow-400 opacity-50">01</span>
+                        <h3 class="text-2xl font-bold">どんな車も買取保証</h3>
+                    </div>
+                    <p class="text-blue-100 leading-relaxed mb-4 text-lg">
+                        <strong>普通車2万円、軽自動車5,000円を最低保証。</strong>
+                        他社で0円と言われた過走行車や不動車も、独自の海外輸出・パーツ販路を駆使して必ず価値をつけます。
+                    </p>
+                    <div class="bg-white/10 p-4 rounded-xl text-xs italic opacity-70">
+                        ※所有権解除不可、盗難車、重要パーツ欠品車は除きます。
+                    </div>
+                </div>
+
+                <!-- Promise 2 -->
+                <div class="bg-white/10 p-8 rounded-3xl border border-white/20 backdrop-blur-sm hover:bg-white/20 transition-all">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="text-5xl font-black text-yellow-400 opacity-50">02</span>
+                        <h3 class="text-2xl font-bold">二重査定（減額）なし</h3>
+                    </div>
+                    <p class="text-blue-100 leading-relaxed text-lg">
+                        契約後に不備が見つかった等の理由で、後から減額することは一切ありません。一度提示した価格でお支払いまで責任を持ちます。誠実な価格提示をお約束します。
+                    </p>
+                </div>
+
+                <!-- Promise 3 -->
+                <div class="bg-white/10 p-8 rounded-3xl border border-white/20 backdrop-blur-sm hover:bg-white/20 transition-all">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="text-5xl font-black text-yellow-400 opacity-50">03</span>
+                        <h3 class="text-2xl font-bold">諸費用は完全無料</h3>
+                    </div>
+                    <p class="text-blue-100 leading-relaxed text-lg">
+                        査定料はもちろん、<strong>名義変更の代行費、書類作成サポート、出張費まですべて無料</strong>です。ご成約後のキャンセル料も発生しませんので、お気軽にご相談ください。
+                    </p>
+                </div>
+
+                <!-- Promise 4 -->
+                <div class="bg-white/10 p-8 rounded-3xl border border-white/20 backdrop-blur-sm hover:bg-white/20 transition-all">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="text-5xl font-black text-yellow-400 opacity-50">04</span>
+                        <h3 class="text-2xl font-bold">即金・迅速な対応</h3>
+                    </div>
+                    <p class="text-blue-100 leading-relaxed text-lg">
+                        書類が揃えば、最短即日でお支払い。名義変更もスピーディーに行い、完了通知もお送りします。お客様の手間を最小限に、安心してお金を受け取っていただけます。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- お客様の声セクション -->
+    <section class="py-20 px-4 bg-pattern">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-black text-main mb-4 italic">Customer Voice</h2>
+                <p class="text-slate-600 font-bold">福岡の皆様から喜びの声をいただいています</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Case 1 -->
+                <div class="bg-white p-8 rounded-[2rem] shadow-xl relative mt-8 flex flex-col h-full">
+                    <div class="absolute -top-10 left-1/2 -translate-x-1/2 w-20 h-20 bg-slate-200 rounded-full border-4 border-white overflow-hidden shadow-md flex items-center justify-center">
+                        <i data-lucide="user" class="text-slate-400 w-10 h-10"></i>
+                    </div>
+                    <div class="text-center pt-10 flex-grow">
+                        <p class="text-main font-black text-lg mb-4">「他店より高かった！」</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6 font-medium italic">「丁寧な査定で安心して売却できました。大手で見積もりを出していましたが、ハッピーカーズさんが一番高い価格を提示してくれました。赤星さんの人柄も決め手です。」</p>
+                    </div>
+                    <p class="text-xs font-bold text-slate-400 text-center">博多区・40代男性</p>
+                </div>
+
+                <!-- Case 2 -->
+                <div class="bg-white p-8 rounded-[2rem] shadow-xl relative mt-8 border-t-8 border-accent flex flex-col h-full">
+                    <div class="absolute -top-10 left-1/2 -translate-x-1/2 w-20 h-20 bg-orange-50 rounded-full border-4 border-white overflow-hidden shadow-md flex items-center justify-center">
+                        <i data-lucide="user" class="text-accent w-10 h-10"></i>
+                    </div>
+                    <div class="text-center pt-10 flex-grow">
+                        <p class="text-accent font-black text-lg mb-4">「古い車でも値段がついた」</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6 font-medium italic">「10年以上乗った古い車だったので廃車だと思っていましたが、予想以上の価格でした。対応もとても親切で嬉しかったです。最低保証があるのは本当ですね！」</p>
+                    </div>
+                    <p class="text-xs font-bold text-slate-400 text-center">福岡市・30代女性</p>
+                </div>
+
+                <!-- Case 3 -->
+                <div class="bg-white p-8 rounded-[2rem] shadow-xl relative mt-8 flex flex-col h-full">
+                    <div class="absolute -top-10 left-1/2 -translate-x-1/2 w-20 h-20 bg-slate-200 rounded-full border-4 border-white overflow-hidden shadow-md flex items-center justify-center">
+                        <i data-lucide="user" class="text-slate-400 w-10 h-10"></i>
+                    </div>
+                    <div class="text-center pt-10 flex-grow">
+                        <p class="text-main font-black text-lg mb-4">「初めての売却でも安心」</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6 font-medium italic">「初めての車の売却でしたが、赤星さんが丁寧に説明してくださり、とても安心できました。久留米まで出張無料なのも助かりました。また相談したいです。」</p>
+                    </div>
+                    <p class="text-xs font-bold text-slate-400 text-center">久留米市・20代女性</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 【O】Offer：解決策の提示・行動 -->
+    <section id="offer" class="py-20 px-4 bg-slate-100 relative overflow-hidden">
+        <div class="max-w-5xl mx-auto relative z-10">
+            <div class="bg-white rounded-[3rem] shadow-2xl overflow-hidden border-4 border-line">
+                <div class="bg-line p-8 text-white text-center">
+                    <h2 class="text-3xl md:text-5xl font-black mb-4">無料出張査定を予約する</h2>
+                    <p class="font-bold text-lg opacity-90">福岡市内・県北部・筑後地域へどこでも無料で伺います！</p>
+                </div>
+                
+                <div class="p-8 md:p-12 flex flex-col md:flex-row gap-10 items-center">
+                    <div class="w-full md:w-1/2 text-center">
+                        <p class="font-black text-2xl text-main mb-6 flex items-center justify-center gap-2">
+                            <i data-lucide="smartphone"></i> LINEでお気軽に相談！
+                        </p>
+                        <div class="bg-white p-6 rounded-3xl inline-block mb-6 shadow-inner border border-slate-100">
+                            <!-- LINE QRコード -->
+                            <img src="line_oa_chat_250522_180106_group_0.png" alt="LINE QRコード" class="w-44 h-44 mx-auto mb-4" onerror="this.src='https://via.placeholder.com/200?text=LINE+QR'">
+                            <p class="text-[10px] text-slate-400 font-bold">QRコードを読み取って友だち追加</p>
+                        </div>
+                        <a href="https://line.me" target="_blank" class="block w-full bg-line hover:bg-green-600 text-white text-2xl font-black py-6 rounded-2xl flex justify-center items-center gap-3 transition-all shadow-xl line-glow">
+                            <i data-lucide="message-circle" class="w-8 h-8"></i> LINEで無料査定
+                        </a>
+                        <p class="mt-4 text-sm font-bold text-slate-500">「まずはいくらになるか目安を知りたい」だけでも大歓迎！</p>
+                    </div>
+                    
+                    <div class="w-full md:w-1/2">
+                        <div class="bg-slate-50 p-8 rounded-3xl border-2 border-dashed border-slate-300 h-full flex flex-col justify-center text-center">
+                            <p class="font-bold text-slate-500 mb-2">お急ぎの方はお電話ください</p>
+                            <a href="tel:090-8768-5775" class="text-3xl md:text-4xl font-black text-main hover:text-accent transition-colors flex items-center justify-center gap-2 mb-2">
+                                <i data-lucide="phone-call" class="w-10 h-10"></i> 090-8768-5775
+                            </a>
+                            <p class="text-sm font-bold text-slate-400">受付時間 9:00〜19:00 / 不定休</p>
+                            
+                            <div class="mt-8 pt-8 border-t border-slate-200 text-left">
+                                <h4 class="font-black text-main mb-4 flex items-center gap-2">
+                                    <i data-lucide="map-pin" class="text-accent w-5 h-5"></i>
+                                    無料出張エリア
+                                </h4>
+                                <div class="grid grid-cols-2 gap-y-2 gap-x-4 text-sm font-bold text-slate-600">
+                                    <div class="flex items-center gap-1"><i data-lucide="chevron-right" class="w-3 h-3 text-accent"></i> 博多区・中央区</div>
+                                    <div class="flex items-center gap-1"><i data-lucide="chevron-right" class="w-3 h-3 text-accent"></i> 福岡市全域</div>
+                                    <div class="flex items-center gap-1"><i data-lucide="chevron-right" class="w-3 h-3 text-accent"></i> 福岡県北部全域</div>
+                                    <div class="flex items-center gap-1"><i data-lucide="chevron-right" class="w-3 h-3 text-accent"></i> 久留米市周辺</div>
+                                    <div class="flex items-center gap-1"><i data-lucide="chevron-right" class="w-3 h-3 text-accent"></i> 筑後地域全域</div>
+                                    <div class="flex items-center gap-1"><i data-lucide="chevron-right" class="w-3 h-3 text-accent"></i> 糸島・古賀方面</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター・店舗情報 -->
+    <footer class="bg-slate-900 text-slate-300 py-20 px-4">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+            <div>
+                <div class="flex items-center gap-2 mb-8">
+                    <i data-lucide="car-front" class="text-white w-10 h-10"></i>
+                    <h2 class="text-3xl font-black text-white leading-none uppercase tracking-tighter">ハッピーカーズ博多店</h2>
+                </div>
+                <div class="space-y-5 font-medium">
+                    <p class="flex items-start gap-4">
+                        <i data-lucide="map-pin" class="w-6 h-6 shrink-0 text-accent"></i>
+                        <span>〒812-0041 福岡県福岡市博多区吉塚4丁目7-40-203</span>
+                    </p>
+                    <p class="flex items-center gap-4">
+                        <i data-lucide="user" class="w-6 h-6 shrink-0 text-accent"></i>
+                        <span>代表：赤星 博康 (運営：あかまる商事)</span>
+                    </p>
+                    <p class="flex items-center gap-4">
+                        <i data-lucide="shield-check" class="w-6 h-6 shrink-0 text-accent"></i>
+                        <span>福岡県公安委員会許可 第901022510072号</span>
+                    </p>
+                    <p class="flex items-center gap-4">
+                        <i data-lucide="mail" class="w-6 h-6 shrink-0 text-accent"></i>
+                        <span>akahoshi@happycars.jp</span>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="bg-slate-800/50 p-10 rounded-3xl text-center md:text-left border border-slate-700">
+                <h3 class="text-white font-black text-2xl mb-6">お気軽にご相談ください</h3>
+                <p class="text-slate-400 mb-8 leading-relaxed font-medium">
+                    大切に乗ってこられたお車。その「想い」まで汲み取った査定をお約束します。福岡で一番の「ハッピー」な買取体験をお届けします。
+                </p>
+                <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                    <a href="tel:090-8768-5775" class="bg-white text-slate-900 px-8 py-4 rounded-2xl font-black text-lg flex items-center gap-2 hover:bg-slate-200 transition-colors shadow-lg">
+                        <i data-lucide="phone" class="w-5 h-5"></i> 電話する
+                    </a>
+                    <a href="#offer" class="bg-line text-white px-8 py-4 rounded-2xl font-black text-lg flex items-center gap-2 hover:bg-green-600 transition-colors shadow-lg">
+                        <i data-lucide="message-circle" class="w-5 h-5"></i> LINE査定
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto mt-20 pt-8 border-t border-slate-800 text-center text-xs text-slate-500 font-bold">
+            &copy; 2026 ハッピーカーズ博多店 (運営：あかまる商事) All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- スマホ用 固定ボトムメニュー (Floating CTA) -->
+    <div class="fixed bottom-0 left-0 w-full z-50 md:hidden bg-white border-t border-slate-200 flex shadow-[0_-4px_15px_rgba(0,0,0,0.15)]">
+        <a href="tel:090-8768-5775" class="flex-1 flex flex-col items-center justify-center py-4 text-main font-black border-r border-slate-100 bg-white">
+            <i data-lucide="phone" class="w-6 h-6 mb-1"></i>
+            <span class="text-[10px]">今すぐ電話</span>
+        </a>
+        <a href="#offer" class="flex-[2] flex items-center justify-center gap-3 bg-line text-white font-black py-4 active:bg-green-700 transition-colors">
+            <i data-lucide="message-circle" class="w-7 h-7"></i>
+            <span class="text-lg tracking-wider">LINEで無料査定</span>
+        </a>
+    </div>
+
+    <!-- Lucideアイコンの初期化 -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
